@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreamers</title>
+  </head>
+  <body>
+    <script>
+      //Create direct instance of object
+      let ram = {
+        name: "hari",
+        age: 25,
+        address: "balaju",
+        showDetail: showName,
+      };
+      ram.showDetail();
+
+      //Creat an object constructor
+      function person(name, age, address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.showDetail = showName;
+      }
+      let ram1 = new person("ram1", 25, "bypass");
+      ram1.showDetail();
+      function showName() {
+        document.write("The name is:" + this.name);
+      }
+    </script>
+  </body>
+</html>
+<!-- create a class/object named cricle with property radius and method to show it's area. -->
